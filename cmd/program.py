@@ -3,6 +3,8 @@ import time
 import random as random
 GPIO.setmode(GPIO.BOARD)
 
+#Ce code ne fait rien d'interessant, n'essaye pas de comprendre les équations ._.
+
 def tousauf(k):
     for i in range(4):
         if(i==k):
