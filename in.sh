@@ -1,0 +1,1 @@
+python ex0.py

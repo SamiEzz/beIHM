@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="row ">
+          <div class="col-sm-10 text-center center-block">
+
+              <form method="GET" action="ok.php" id="cmdform">
+                
+                <h1 class="display-1">IHM BEI</h1>
+                <h3 class="display-2"> Please chose your program</h3>
+                <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary"><a href="ok.php?cmd=on">On</a></button>
+                    <button type="button" class="btn btn-secondary"><a href="ok.php?cmd=off">Off</a></button>
+                    <!--
+                      <button type="button" class="btn btn-secondary"><a href="ok.php?cmd=play&args=0.5">Play</a></button>
+                    <button type="button" class="btn btn-secondary"><a href="ok.php?cmd=program">program</a></button>
+                    //-->
+                </div>
+                <br>
+                
+                <select width="250" name="cmd" form="cmdform" class="form-control">
+                  <!--
+                    <option value="on">on</option>
+                    <option value="off">Off</option>
+                  //-->
+                    <option value="play">Play</option>
+                    <option value="program1">programm1</option>
+                  </select>
+                  <input class="form-control" placeholder="delay in secondes" type="text" name="args" >
+                  <br><input  class="btn btn-primary" type="submit">
+                </form>
+                <br>
+                <img class="rounded-circle" width="100" height="100" src="https://pbs.twimg.com/profile_images/1003630276021489671/HPxIG9mQ_400x400.jpg">
+                <img width="100" height="100" src="http://www.crab.asso.fr/_/rsrc/1441434623991/partenaires/SCLE%20Resized.png?height=320&width=320">
+            
+          </div>
+        </div>
+      </div>
+    </body>
+
+<script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+<script src="js/addfunctions.js" type="text/javascript"></script>
+
+<!--  Plugin for the Wizard -->
+<script src="js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+</html>
