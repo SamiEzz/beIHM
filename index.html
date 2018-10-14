@@ -1,6 +1,9 @@
 <html>
   <head>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/Chart.min.js"></script>
+    
+
   </head>
   <body>
     <div class="container">
@@ -27,12 +30,22 @@
                     <option value="off">Off</option>
                   //-->
                     <option value="play">Play</option>
-                    <option value="program1">programm1</option>
+                    <option value="program">program</option>
                   </select>
                   <input class="form-control" placeholder="delay in secondes" type="text" name="args" >
                   <br><input  class="btn btn-primary" type="submit">
                 </form>
                 <br>
+                <canvas id="myChart" width="241" height="150" style="width: 241px; height: 150px;"></canvas>
+                <input type="button" value="Add Data" onclick="adddata()">
+                
+                  <!-- TODO: Missing CoffeeScript 2 -->
+                
+                  <script type="text/javascript">
+                
+                
+                   
+                  </script>
                 <img class="rounded-circle" width="100" height="100" src="https://pbs.twimg.com/profile_images/1003630276021489671/HPxIG9mQ_400x400.jpg">
                 <img width="100" height="100" src="http://www.crab.asso.fr/_/rsrc/1441434623991/partenaires/SCLE%20Resized.png?height=320&width=320">
             
@@ -43,8 +56,7 @@
 
 <script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-<script src="js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
-<script src="js/addfunctions.js" type="text/javascript"></script>
+<script src="js/charts.js" type="text/javascript"></script>
 
 <!--  Plugin for the Wizard -->
 <script src="js/paper-bootstrap-wizard.js" type="text/javascript"></script>
