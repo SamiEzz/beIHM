@@ -1,5 +1,3 @@
-
-
 var canvas = document.getElementById('myChart');
 var data = {
   labels1: ["January", "February", "March", "April", "May", "June", "July"],
