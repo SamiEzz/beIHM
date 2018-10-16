@@ -1,13 +1,15 @@
 
-
-var canvas = document.getElementById('myChart');
+var chartId="myChart";
+var x,y;
+var lelabel = "Courant DC";
+var ymax=1200;
+// plot (chartId,x,y,lelabel,ymax)
+var canvas = document.getElementById(chartId);
 var data = {
-  labels1: ["January", "February", "March", "April", "May", "June", "July"],
-  labels: [],
-    
+  labels: x,
     datasets: [
         {
-            label: "Courant DC",
+            label: lelabel,
             fill: false,
             lineTension: 0.5,
             backgroundColor: "rgba(75,192,192,0.4)",
@@ -44,7 +46,7 @@ var option = {
                 beginAtZero: true,
                 //steps: 10,
                // stepValue: 5,
-                max:1200,
+                max:ymax,
             }
         }]
 },
@@ -55,7 +57,6 @@ function adddata(){
   var step=1;
   t[t.length]= t.length ;
   if(t.length<mdata.length){
-    option.scales.yAxes[0].ticks.max=160;
     alldata[alldata.length] = mdata[nextval];
     myLineChart.data.datasets[0].data[myLineChart.data.labels.length]=mdata[nextval];
     myLineChart.data.labels[myLineChart.data.labels.length]=myLineChart.data.labels.length;
@@ -64,7 +65,6 @@ function adddata(){
     
   }
   else{
-    option.scales.yAxes[0].ticks.max=1100;
     alldata[alldata.length] = 950 + 100*Math.random();
     myLineChart.data.datasets[0].data=alldata.slice(alldata.length-chartLen,alldata.length);
     myLineChart.data.labels=t.slice(t.length-chartLen,t.length);
