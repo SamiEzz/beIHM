@@ -1,0 +1,335 @@
+
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>Material Pro Admin Template - The Most Complete &amp; Trusted Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="../assets/plugins/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-js/dist/chartist-init.css" rel="stylesheet">
+    <link href="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="../assets/plugins/css-chart/css-chart.css" rel="stylesheet">
+    <!--This page css - Morris CSS -->
+    <link href="../assets/plugins/morrisjs/morris.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+
+<body class="fix-header fix-sidebar card-no-border logo-center mini-sidebar">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader" style="display: none;">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper" style="min-height: 821px;">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor m-b-0 m-t-0">Dashboard</h3>
+                        <h5>
+    BE Industriel - TAEE ENSEEIHT
+</h5>
+                    </div>
+                    <div class="col-md-7 col-4 align-self-center">
+                        <div class="d-flex m-t-10 justify-content-end">
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0"><small>THIS MONTH</small></h6>
+                                    <h4 class="m-t-0 text-info">$58,356</h4></div>
+                                <div class="spark-chart">
+                                    <div id="monthchart"><canvas width="60" height="35" style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="d-flex m-r-20 m-l-10 hidden-md-down">
+                                <div class="chart-text m-r-10">
+                                    <h6 class="m-b-0"><small>LAST MONTH</small></h6>
+                                    <h4 class="m-t-0 text-primary">$48,356</h4></div>
+                                <div class="spark-chart">
+                                    <div id="lastmonthchart"><canvas width="60" height="35" style="display: inline-block; width: 60px; height: 35px; vertical-align: top;"></canvas></div>
+                                </div>
+                            </div>
+                            <div class="">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Bread crumb and right sidebar toggle -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                
+                <!-- Row -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-info"><i class="ti-wallet"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-light">$3249</h3>
+                                        <h5 class="text-muted m-b-0">Total Revenue</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-warning"><i class="mdi mdi-cellphone-link"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht">$2376</h3>
+                                        <h5 class="text-muted m-b-0">Online Revenue</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht">$1795</h3>
+                                        <h5 class="text-muted m-b-0">Offline Revenue</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-row">
+                                    <div class="round round-lg align-self-center round-danger"><i class="mdi mdi-bullseye"></i></div>
+                                    <div class="m-l-10 align-self-center">
+                                        <h3 class="m-b-0 font-lgiht">$687</h3>
+                                        <h5 class="text-muted m-b-0">Ad. Expense</h5></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                </div>
+<div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-4">
+                                    <div class="card-body">
+                                        <h3>Sales of Ample Vs Pixel</h3>
+                                        <h6 class="card-subtitle m-b-0">check the difference of Admin</h6> </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 b-r align-self-center">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <div class="col-8 p-0 align-self-center">
+                                                <h3 class="m-b-0">$31568</h3>
+                                                <h5 class="text-muted m-b-0">Growth</h5> </div>
+                                            <div class="col-4 text-right">
+                                                <div class="round align-self-center round-success"><i class="mdi mdi-chart-line"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 align-self-center">
+                                    <div class="card-body">
+                                        <div class="d-flex flex-row">
+                                            <div class="col-8 p-0 align-self-center">
+                                                <h3 class="m-b-0">$15478</h3>
+                                                <h5 class="text-muted m-b-0">Loss</h5> </div>
+                                            <div class="col-4 text-right">
+                                                <div class="round align-self-center bg-inverse"><i class="mdi mdi-chart-bar"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <hr class="m-t-0"> </div>
+                            <div class="chartist-chart andvios m-t-40" style="height:350px;"> <div class="chartist-tooltip" style="top: -24px; left: 682px;"></div><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"><line y1="270" y2="270" x1="40" x2="728" class="ct-grid ct-vertical"></line><line y1="190" y2="190" x1="40" x2="728" class="ct-grid ct-vertical"></line><line y1="110" y2="110" x1="40" x2="728" class="ct-grid ct-vertical"></line><line y1="30" y2="30" x1="40" x2="728" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M40,270L40,270C53.49,264.667,66.98,254,80.471,254C93.961,254,107.451,258,120.941,258C134.431,258,147.922,174,161.412,174C174.902,174,188.392,234,201.882,234C215.373,234,228.863,232.37,242.353,230C255.843,227.63,269.333,198,282.824,198C296.314,198,309.804,210,323.294,210C336.784,210,350.275,94,363.765,94C377.255,94,390.745,202,404.235,202C417.725,202,431.216,198.148,444.706,194C458.196,189.852,471.686,173.778,485.176,166C498.667,158.222,512.157,146,525.647,146C539.137,146,552.627,238,566.118,238C579.608,238,593.098,122,606.588,122C620.078,122,633.569,230,647.059,230C660.549,230,674.039,198.585,687.529,174C701.02,149.415,714.51,102,728,66L728,270Z" class="ct-area"></path><path d="M40,270C53.49,264.667,66.98,254,80.471,254C93.961,254,107.451,258,120.941,258C134.431,258,147.922,174,161.412,174C174.902,174,188.392,234,201.882,234C215.373,234,228.863,232.37,242.353,230C255.843,227.63,269.333,198,282.824,198C296.314,198,309.804,210,323.294,210C336.784,210,350.275,94,363.765,94C377.255,94,390.745,202,404.235,202C417.725,202,431.216,198.148,444.706,194C458.196,189.852,471.686,173.778,485.176,166C498.667,158.222,512.157,146,525.647,146C539.137,146,552.627,238,566.118,238C579.608,238,593.098,122,606.588,122C620.078,122,633.569,230,647.059,230C660.549,230,674.039,198.585,687.529,174C701.02,149.415,714.51,102,728,66" class="ct-line"></path><line x1="40" y1="270" x2="40.01" y2="270" class="ct-point" ct:value="0"></line><line x1="80.47058823529412" y1="254" x2="80.48058823529412" y2="254" class="ct-point" ct:value="4"></line><line x1="120.94117647058823" y1="258" x2="120.95117647058824" y2="258" class="ct-point" ct:value="3"></line><line x1="161.41176470588235" y1="174" x2="161.42176470588234" y2="174" class="ct-point" ct:value="24"></line><line x1="201.88235294117646" y1="234" x2="201.89235294117645" y2="234" class="ct-point" ct:value="9"></line><line x1="242.35294117647058" y1="230" x2="242.36294117647057" y2="230" class="ct-point" ct:value="10"></line><line x1="282.8235294117647" y1="198" x2="282.8335294117647" y2="198" class="ct-point" ct:value="18"></line><line x1="323.2941176470588" y1="210" x2="323.3041176470588" y2="210" class="ct-point" ct:value="15"></line><line x1="363.7647058823529" y1="94" x2="363.7747058823529" y2="94" class="ct-point" ct:value="44"></line><line x1="404.2352941176471" y1="202" x2="404.24529411764706" y2="202" class="ct-point" ct:value="17"></line><line x1="444.70588235294116" y1="194" x2="444.71588235294115" y2="194" class="ct-point" ct:value="19"></line><line x1="485.17647058823525" y1="166" x2="485.18647058823524" y2="166" class="ct-point" ct:value="26"></line><line x1="525.6470588235294" y1="146" x2="525.6570588235294" y2="146" class="ct-point" ct:value="31"></line><line x1="566.1176470588235" y1="238" x2="566.1276470588235" y2="238" class="ct-point" ct:value="8"></line><line x1="606.5882352941176" y1="122" x2="606.5982352941176" y2="122" class="ct-point" ct:value="37"></line><line x1="647.0588235294117" y1="230" x2="647.0688235294117" y2="230" class="ct-point" ct:value="10"></line><line x1="687.5294117647059" y1="174" x2="687.5394117647058" y2="174" class="ct-point" ct:value="24"></line><line x1="728" y1="66" x2="728.01" y2="66" class="ct-point" ct:value="51"></line></g><g class="ct-series ct-series-b"><path d="M40,270L40,270C53.49,268.667,66.98,266,80.471,266C93.961,266,107.451,266,120.941,266C134.431,266,147.922,244.609,161.412,230C174.902,215.391,188.392,174,201.882,174C215.373,174,228.863,246,242.353,246C255.843,246,269.333,222,282.824,222C296.314,222,309.804,254,323.294,254C336.784,254,350.275,186,363.765,186C377.255,186,390.745,210,404.235,210C417.725,210,431.216,94,444.706,94C458.196,94,471.686,174,485.176,174C498.667,174,512.157,158,525.647,158C539.137,158,552.627,254,566.118,254C579.608,254,593.098,240.353,606.588,230C620.078,219.647,633.569,186,647.059,186C660.549,186,674.039,250,687.529,250C701.02,250,714.51,138,728,82L728,270Z" class="ct-area"></path><path d="M40,270C53.49,268.667,66.98,266,80.471,266C93.961,266,107.451,266,120.941,266C134.431,266,147.922,244.609,161.412,230C174.902,215.391,188.392,174,201.882,174C215.373,174,228.863,246,242.353,246C255.843,246,269.333,222,282.824,222C296.314,222,309.804,254,323.294,254C336.784,254,350.275,186,363.765,186C377.255,186,390.745,210,404.235,210C417.725,210,431.216,94,444.706,94C458.196,94,471.686,174,485.176,174C498.667,174,512.157,158,525.647,158C539.137,158,552.627,254,566.118,254C579.608,254,593.098,240.353,606.588,230C620.078,219.647,633.569,186,647.059,186C660.549,186,674.039,250,687.529,250C701.02,250,714.51,138,728,82" class="ct-line"></path><line x1="40" y1="270" x2="40.01" y2="270" class="ct-point" ct:value="0"></line><line x1="80.47058823529412" y1="266" x2="80.48058823529412" y2="266" class="ct-point" ct:value="1"></line><line x1="120.94117647058823" y1="266" x2="120.95117647058824" y2="266" class="ct-point" ct:value="1"></line><line x1="161.41176470588235" y1="230" x2="161.42176470588234" y2="230" class="ct-point" ct:value="10"></line><line x1="201.88235294117646" y1="174" x2="201.89235294117645" y2="174" class="ct-point" ct:value="24"></line><line x1="242.35294117647058" y1="246" x2="242.36294117647057" y2="246" class="ct-point" ct:value="6"></line><line x1="282.8235294117647" y1="222" x2="282.8335294117647" y2="222" class="ct-point" ct:value="12"></line><line x1="323.2941176470588" y1="254" x2="323.3041176470588" y2="254" class="ct-point" ct:value="4"></line><line x1="363.7647058823529" y1="186" x2="363.7747058823529" y2="186" class="ct-point" ct:value="21"></line><line x1="404.2352941176471" y1="210" x2="404.24529411764706" y2="210" class="ct-point" ct:value="15"></line><line x1="444.70588235294116" y1="94" x2="444.71588235294115" y2="94" class="ct-point" ct:value="44"></line><line x1="485.17647058823525" y1="174" x2="485.18647058823524" y2="174" class="ct-point" ct:value="24"></line><line x1="525.6470588235294" y1="158" x2="525.6570588235294" y2="158" class="ct-point" ct:value="28"></line><line x1="566.1176470588235" y1="254" x2="566.1276470588235" y2="254" class="ct-point" ct:value="4"></line><line x1="606.5882352941176" y1="230" x2="606.5982352941176" y2="230" class="ct-point" ct:value="10"></line><line x1="647.0588235294117" y1="186" x2="647.0688235294117" y2="186" class="ct-point" ct:value="21"></line><line x1="687.5294117647059" y1="250" x2="687.5394117647058" y2="250" class="ct-point" ct:value="5"></line><line x1="728" y1="82" x2="728.01" y2="82" class="ct-point" ct:value="47"></line></g></g><g class="ct-labels"><foreignObject style="overflow: visible;" x="40" y="275" width="40.470588235294116" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">0</span></foreignObject><foreignObject style="overflow: visible;" x="80.47058823529412" y="275" width="40.470588235294116" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">4</span></foreignObject><foreignObject style="overflow: visible;" x="120.94117647058823" y="275" width="40.470588235294116" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">8</span></foreignObject><foreignObject style="overflow: visible;" x="161.41176470588235" y="275" width="40.470588235294116" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">12</span></foreignObject><foreignObject style="overflow: visible;" x="201.88235294117646" y="275" width="40.470588235294116" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">16</span></foreignObject><foreignObject style="overflow: visible;" x="242.35294117647058" y="275" width="40.470588235294116" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">20</span></foreignObject><foreignObject style="overflow: visible;" x="282.8235294117647" y="275" width="40.47058823529409" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">24</span></foreignObject><foreignObject style="overflow: visible;" x="323.2941176470588" y="275" width="40.470588235294144" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">30</span></foreignObject><foreignObject style="overflow: visible;" x="363.7647058823529" y="275" width="40.470588235294144" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">16</span></foreignObject><foreignObject style="overflow: visible;" x="404.2352941176471" y="275" width="40.47058823529409" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">20</span></foreignObject><foreignObject style="overflow: visible;" x="444.70588235294116" y="275" width="40.47058823529409" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">24</span></foreignObject><foreignObject style="overflow: visible;" x="485.17647058823525" y="275" width="40.470588235294144" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">30</span></foreignObject><foreignObject style="overflow: visible;" x="525.6470588235294" y="275" width="40.470588235294144" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">34</span></foreignObject><foreignObject style="overflow: visible;" x="566.1176470588235" y="275" width="40.47058823529403" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">38</span></foreignObject><foreignObject style="overflow: visible;" x="606.5882352941176" y="275" width="40.470588235294144" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">42</span></foreignObject><foreignObject style="overflow: visible;" x="647.0588235294117" y="275" width="40.470588235294144" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">46</span></foreignObject><foreignObject style="overflow: visible;" x="687.5294117647059" y="275" width="40.470588235294144" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 40px; height: 40px;">50</span></foreignObject><foreignObject style="overflow: visible;" x="728" y="275" width="30" height="40"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 30px; height: 40px;">54</span></foreignObject><foreignObject style="overflow: visible;" y="190" x="30" height="80" width="0"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 80px; width: 0px;">0</span></foreignObject><foreignObject style="overflow: visible;" y="110" x="30" height="80" width="0"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 80px; width: 0px;">20</span></foreignObject><foreignObject style="overflow: visible;" y="30" x="30" height="80" width="0"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 80px; width: 0px;">40</span></foreignObject><foreignObject style="overflow: visible;" y="0" x="30" height="30" width="0"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 30px; width: 0px;">60</span></foreignObject></g></svg></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                
+                
+                
+                
+                
+                <!-- Row -->
+                
+                <!-- Row -->
+                
+                <!-- Row -->
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- Right sidebar -->
+                <!-- ============================================================== -->
+                <!-- .right-sidebar -->
+                <div class="right-sidebar">
+                    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;"><div class="slimscrollright" style="overflow: hidden; width: auto; height: 100%;">
+                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                        <div class="r-panel-body">
+                            <ul id="themecolors" class="m-t-20">
+                                <li><b>With Light sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                                <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme ">12</a></li>
+                            </ul>
+                            <ul class="m-t-20 chatonline">
+                                <li><b>Chat option</b></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div><div class="slimScrollBar" style="background: rgb(220, 220, 220); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Right sidebar -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">© 2018 ENSEEIHT-TAEE pour SFE SCLE Toulouse</footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/popper/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/chartist-js/dist/chartist.min.js"></script>
+    <script src="../assets/plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Chart JS -->
+    <script src="../assets/plugins/echarts/echarts-all.js"></script>
+    <!-- Flot Charts JavaScript -->
+    <script src="../assets/plugins/flot/excanvas.js"></script>
+    <script src="../assets/plugins/flot/jquery.flot.js"></script>
+    <script src="../assets/plugins/flot/jquery.flot.time.js"></script>
+    <script src="../assets/plugins/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+    <script src="js/dashboard5.js"></script>
+    <!-- ============================================================== -->
+    <!-- Style switcher -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+
+<div class="flotTip" style="display: none; position: absolute;"></div></body></html>
