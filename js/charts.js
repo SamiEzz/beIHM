@@ -114,3 +114,14 @@ var myLineChart = Chart.Line(canvas,{
         slug: "u5aanta8"
       }], "*")
     }
+
+    function changecourantk(){
+      document.getElementById("kicourant").innerHTML = document.getElementById("kic").value;
+      document.getElementById("kpcourant").innerHTML = document.getElementById("kpc").value;
+      
+    }
+    function changetensionk(){
+      document.getElementById("kitension").innerHTML = document.getElementById("kit").value;
+      document.getElementById("kptension").innerHTML = document.getElementById("kpt").value;
+      
+    }
