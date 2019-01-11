@@ -9,7 +9,7 @@ function mysql_get_data(){
     document.getElementById("test_db").innerHTML = data;
     mysql_data = JSON.parse("[" + data + "]");
   });
-  setTimeout(mysql_get_data,3000);
+  //setTimeout(mysql_get_data,3000);
 }
 
 
@@ -99,6 +99,7 @@ var option = {
 //option.scales.yAxes[ticks].max
 var instant_t=0;
 function adddata(){
+  mysql_get_data();
   var chartLen=10;
   //t[t.length]= instant_t;
   alldata=mysql_data.slice(0,chartLen);
