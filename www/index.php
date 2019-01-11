@@ -2921,14 +2921,10 @@ Boucle de tension
             </div><div class="row">
               <div class="col-md-12 grid-margin">
                 <div class="card">
-                  <div class="card-body">
-                    
-                    <div class="center" style="text-align:center">
-      <button type="button" class="btn btn-inverse-success btn-fw"><a href="ok.php?cmd=on">On</a></button>
-  <button type="button" class="btn btn-inverse-danger btn-fw"><a href="ok.php?cmd=off">Off</a></button>
-  
-  <button type="button" class="btn btn-inverse-primary btn-fw"><b href="ok.php?cmd=play">Play</b></button>
-  
+                  <div class="card-body" >
+                    <div><button onclick="mysql_get_data()">get data</button></div>
+                    <p id="test_db">
+                    </p>
   
                       
                     </div>
@@ -3115,6 +3111,7 @@ Boucle de tension
     <script src="vendors/js/vendor.bundle.base.js"></script>
     <script src="vendors/js/vendor.bundle.addons.js"></script>
     <script src="js/charts.js" type="text/javascript"></script>
+    
     <!-- endinject -->
     <!-- Plugin js for this page-->
     <!-- End plugin js for this page-->

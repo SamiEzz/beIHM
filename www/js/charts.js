@@ -1,4 +1,24 @@
+t_mesure = 3;
+// -------------------------------------------------
+// ---------------- AJAX
+// -------------------------------------------------
+var mysql_data=[];
+function mysql_get_data(){
+  
+  $.post('ajax/get_current.php','arg1',function(data){
+    document.getElementById("test_db").innerHTML = data;
+    mysql_data = JSON.parse("[" + data + "]");
+  });
+  setTimeout(mysql_get_data,3000);
+}
+
+
+// -------------------------------------------------
+// ---------------- Animations
+// -------------------------------------------------
+
 var canvas = document.getElementById('myChart');
+
 var data = {
   labels1: ["January", "February", "March", "April", "May", "June", "July"],
   labels: [],
@@ -59,7 +79,7 @@ var data2 = {
     ]
 };
 var nextval=0;
-var mdata=[0,30,55,70,80,85,87,88,89,90,91,92,93,94,95,96,97,98,99,100,100,100,100,100,100,100,300,550,750,890,990,1000];
+var mdata=[0,30,55,70,80,85];
 var t=[];
 var alldata=[];
 
@@ -72,39 +92,32 @@ var option = {
                 beginAtZero: true,
                 //steps: 10,
                // stepValue: 5,
-                max:1200,
+                max:1800,
             }
         }]
 },
 };
 //option.scales.yAxes[ticks].max
+var instant_t=0;
 function adddata(){
-  var chartLen=mdata.length-1;
-  var step=1;
-  t[t.length]= Math.round(t.length*0.2*100)/100 ;
-  if(t.length<mdata.length){
-    option.scales.yAxes[0].ticks.max=160;
-    alldata[alldata.length] = mdata[nextval];
-    myLineChart.data.datasets[0].data[alldata.length]=mdata[nextval];
-    myLineChart.data.labels=t;
-    nextval+=1;
-    //myLineChart.data.datasets[0].data[myLineChart.data.labels.length] = 1000*Math.exp(1-myLineChart.data.labels[myLineChart.data.labels.length-1]);
-    
-  }
-  else{
-    option.scales.yAxes[0].ticks.max=1100;
-    alldata[alldata.length] = 950 + 100*Math.random();
-    myLineChart.data.datasets[0].data=alldata.slice(alldata.length-chartLen,alldata.length);
-    myLineChart.data.labels=t.slice(t.length-chartLen,t.length);
-  }
+  var chartLen=10;
+  //t[t.length]= instant_t;
+  alldata=mysql_data.slice(0,chartLen);
+  
+  myLineChart.data.datasets[0].data=alldata.slice(alldata.length-chartLen,alldata.length);
+  myLineChart.data.labels=[0,1,2,3,4,5,6,7,8,9];
+  
+  
   myLineChart.update();
-  setTimeout(adddata, 200);
+  setTimeout(adddata, t_mesure*1000);
+  instant_t+=t_mesure;
 }
 
 var myLineChart = Chart.Line(canvas,{
   data:data,
   options:option
 });
+
 
 
 // tell the embed parent frame the height of the content
