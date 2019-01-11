@@ -20,7 +20,6 @@ function mysql_get_data(){
 var canvas = document.getElementById('myChart');
 
 var data = {
-  labels1: ["January", "February", "March", "April", "May", "June", "July"],
   labels: [],
     
     datasets: [
