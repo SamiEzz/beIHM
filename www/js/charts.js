@@ -1,4 +1,4 @@
-t_mesure = 3;
+t_mesure = 0.5;
 // -------------------------------------------------
 // ---------------- AJAX
 // -------------------------------------------------
@@ -6,8 +6,9 @@ var mysql_data=[];
 function mysql_get_data(){
   
   $.post('ajax/get_current.php','arg1',function(data){
-    document.getElementById("test_db").innerHTML = data;
     mysql_data = JSON.parse("[" + data + "]");
+    
+    document.getElementById("test_db").innerHTML = mysql_data;
   });
   //setTimeout(mysql_get_data,3000);
 }
@@ -103,7 +104,7 @@ function adddata(){
   var chartLen=10;
   //t[t.length]= instant_t;
   alldata=mysql_data.slice(0,chartLen);
-  
+  alldata.reverse();
   myLineChart.data.datasets[0].data=alldata.slice(alldata.length-chartLen,alldata.length);
   myLineChart.data.labels=[0,1,2,3,4,5,6,7,8,9];
   
