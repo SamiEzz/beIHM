@@ -3024,9 +3024,10 @@ div.im-colormask > div {
               <div class="col-lg-12 grid-margin">
                 <div class="card">
                   <div class="card-body">
-                        <h4 class="card-title">Paramètres de régulation</h4>
-                        <p class="card-description">Correcteur PI au niveau de la régulation de IL
+                        <h4 class="card-title">Correcteur PI au niveau de la régulation de IL
 
+</h4>
+                        <p class="card-description">
 </p>
                         <form class="forms-sample" action="#">
                           
@@ -3088,6 +3089,75 @@ div.im-colormask > div {
                               <div class="input-group">
                           <div class="input-group-prepend">
                             <span class="input-group-text" id="kpcourant">Gw</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" id="kpc">
+                        </div>
+                            </div>
+                          </div>
+                          
+                          <button type="button" class="btn btn-success mr-2" onclick="changecourantk()">Modifier</button>
+                          <button class="btn btn-light">Cancel</button>
+                        </form>
+                      </div>
+                </div>
+              </div>
+            </div><div class="row">
+              <div class="col-lg-12 grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                        <h4 class="card-title">Correcteur PI au niveau de la régulation de la tension de charge Vch
+
+</h4>
+                        <p class="card-description">
+</p>
+                        <form class="forms-sample" action="#">
+                          
+<div class="form-group row">
+                            <label for="exampleInputEmail2" class="col-sm-6 col-form-label">Pulsation établie pour la mise en place pour le correcteur PI
+
+</label>
+                            <div class="col-sm-6">
+                              <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="kpcourant">wn_s_Vch</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder=" " aria-label="Proportionnel" aria-describedby="basic-addon1" id="kpc">
+                        </div>
+                            </div>
+                          </div>
+<div class="form-group row">
+                            <label for="exampleInputEmail2" class="col-sm-6 col-form-label">Facteur d’amortissement mis en place pour le correcteur PI
+
+</label>
+                            <div class="col-sm-6">
+                              <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="kpcourant">ksi_Vch</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder=" " aria-label="Proportionnel" aria-describedby="basic-addon1" id="kpc">
+                        </div>
+                            </div>
+                          </div>
+<div class="form-group row">
+                            <label for="exampleInputEmail2" class="col-sm-6 col-form-label">Gain du correcteur intégrateur
+
+</label>
+                            <div class="col-sm-6">
+                              <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="kpcourant">Ki_Vch</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="" aria-label="Proportionnel" aria-describedby="basic-addon1" id="kpc">
+                        </div>
+                            </div>
+                          </div><div class="form-group row">
+                            <label for="exampleInputEmail2" class="col-sm-6 col-form-label">Gain du correcteur proportionnelle
+
+</label>
+                            <div class="col-sm-6">
+                              <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text" id="kpcourant">Kp_Vch</span>
                           </div>
                           <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1" id="kpc">
                         </div>
