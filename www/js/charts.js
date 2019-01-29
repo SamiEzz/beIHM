@@ -12,6 +12,11 @@ function mysql_get_data(){
   });
   //setTimeout(mysql_get_data,3000);
 }
+function mysql_correcteur_courant(){
+  //wn_s_il ksi_il ki_il kp_il gw
+  $.get('ajax/correcteur_courant.php','arg1');
+  //setTimeout(mysql_get_data,3000);
+}
 
 
 // -------------------------------------------------

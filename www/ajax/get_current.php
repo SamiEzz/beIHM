@@ -2,7 +2,6 @@
 include "connect_db.php";
 
 
-mysqli_select_db($conn,"bei_db");
 
 // Check connection
 if ($conn->connect_error) {

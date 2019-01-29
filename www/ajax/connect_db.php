@@ -8,5 +8,6 @@ $password = "toor";
 
 $conn = new mysqli($servername, $username);
 
+mysqli_select_db($conn,"bei_db");
 
 ?>
