@@ -8,7 +8,7 @@ function mysql_get_data(){
   $.post('ajax/get_current.php','arg1',function(data){
     mysql_data = JSON.parse("[" + data + "]");
     
-    document.getElementById("test_db").innerHTML = mysql_data;
+    //document.getElementById("test_db").innerHTML = mysql_data;
   });
   //setTimeout(mysql_get_data,3000);
 }
