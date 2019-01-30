@@ -141,18 +141,28 @@ function correcteur_courant(){
   var get_query="ajax/correcteur_courant.php"+"?wn_s_il="+document.getElementById("wn_s_il").value+"&ksi_IL="+document.getElementById("ksi_IL").value+"&Ki_IL="+document.getElementById("Ki_IL").value+"&Kp_IL="+document.getElementById("Kp_IL").value+"&Gw="+document.getElementById("Gw").value;
   
   $.get(get_query, function( data ) {
-    alert("Les parametres du correcteur du courant sont modifie avec succes!")
+    alert("Les parametres du correcteur du courant sont modifie avec succes !")
   });
  
 }
 function correcteur_tension(){
-  //document.getElementById("kpcourant").innerHTML = document.getElementById("Gw").value;
-  //document.getElementById("kpcourant").innerHTML = document.getElementById("kpc").value;
+ 
   //alert();
   var get_query="ajax/correcteur_tension.php"+"?wn_s_Vch="+document.getElementById("wn_s_Vch").value+"&ksi_Vch="+document.getElementById("ksi_Vch").value+"&Ki_Vch="+document.getElementById("Ki_Vch").value+"&Kp_Vch="+document.getElementById("Kp_Vch").value;
   
   $.get(get_query, function( data ) {
-    alert("Les parametres du correcteur du tension sont modifie avec succes!")
+    alert("Les parametres du correcteur du tension sont modifie avec succes !")
   });
  
+}
+function abort(){
+  $.get("ajax/abort.php");
+  document.getElementById("sys_state").innerHTML="<i class='mdi mdi-flash-off text-danger icon-lg'></i>";
+  alert("Le systeme est a l'etat d'arret !");
+  
+}
+function init(){
+  $.get("ajax/init.php");
+  document.getElementById("sys_state").innerHTML="<i class='mdi mdi-flash text-success icon-lg'></i>";
+  alert("Le systeme est a repris sont fonctionnement normal !")
 }
