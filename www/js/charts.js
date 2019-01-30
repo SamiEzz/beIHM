@@ -111,7 +111,7 @@ function adddata(){
   alldata=mysql_data.slice(0,chartLen);
   alldata.reverse();
   myLineChart.data.datasets[0].data=alldata.slice(alldata.length-chartLen,alldata.length);
-  myLineChart.data.labels=[0,1,2,3,4,5,6,7,8,9];
+  myLineChart.data.labels=["t-9","t-8","t-7","t-6","t-5","t-4","t-3","t-2","t-1","instant"];
   
   
   myLineChart.update();

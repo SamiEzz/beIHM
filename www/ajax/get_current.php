@@ -9,7 +9,7 @@ if ($conn->connect_error) {
 } 
 //echo "Connected successfully";
 
-$reponse = $conn->query('SELECT * FROM table1 ORDER BY id DESC LIMIT 0, 10');
+$reponse = $conn->query('SELECT * FROM _test_temps_reel ORDER BY id DESC LIMIT 0, 10');
 while ($donnees = $reponse->fetch_assoc())
 {
     echo $donnees['tension'];
