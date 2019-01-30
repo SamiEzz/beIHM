@@ -13,7 +13,7 @@ mydb = mysql.connector.connect(
 )
 
 def create_table():
-    sql = "CREATE TABLE `bei_db`.`table1` ( `id` INT(255) NOT NULL , `tension` FLOAT NULL DEFAULT NULL , `courant` FLOAT NULL DEFAULT NULL , `temperature` FLOAT NULL DEFAULT NULL , INDEX `id_h` (`id`)) ENGINE = InnoDB;"
+    sql = "CREATE TABLE `bei_db`.`test_temps_reel` ( `id` INT(255) NOT NULL , `tension` FLOAT NULL DEFAULT NULL , `courant` FLOAT NULL DEFAULT NULL , `temperature` FLOAT NULL DEFAULT NULL , INDEX `id_h` (`id`)) ENGINE = InnoDB;"
     
     mycursor = mydb.cursor()
 
